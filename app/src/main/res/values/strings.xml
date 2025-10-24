@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">P4_Komposit</string>
+    <string name="nama">Ksatrio Danan</string>
+    <string name="alamat">Bantul, Jogja</string>
+    <string name="prodi">Teknologi Informasi</string>
+    <string name="univ">UMY</string>
+    <string name="copy">Copyright, 2025</string>
 </resources>
