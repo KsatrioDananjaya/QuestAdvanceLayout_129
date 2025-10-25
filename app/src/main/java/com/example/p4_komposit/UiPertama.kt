@@ -140,6 +140,7 @@ fun ActivitasPertama(modifier: Modifier){
                         fontFamily = FontFamily.Monospace,
                         color = Color.White
                     )
+                Spacer(modifier = Modifier.width(170.dp))
                 Box(
                     modifier = Modifier.size(32.dp).clip(CircleShape).background(Color.White),
                     contentAlignment = Alignment.Center
