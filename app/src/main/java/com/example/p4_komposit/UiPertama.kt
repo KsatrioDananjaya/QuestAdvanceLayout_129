@@ -17,6 +17,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.KeyboardArrowRight
 import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -123,12 +124,11 @@ fun ActivitasPertama(modifier: Modifier){
                     modifier = Modifier.size(40.dp).clip(CircleShape).background(Color.White),
                     contentAlignment = Alignment.Center
                 ) {
-                    // We replaced Image with Icon
                     Icon(
                         imageVector = Icons.Default.Lock,
                         contentDescription = "Privacy Icon",
-                        tint = Color.Black, // Set the icon color
-                        modifier = Modifier.size(24.dp) // 24.dp is a good size
+                        tint = Color.Black,
+                        modifier = Modifier.size(24.dp)
                     )
                 }
 
@@ -140,6 +140,17 @@ fun ActivitasPertama(modifier: Modifier){
                         fontFamily = FontFamily.Monospace,
                         color = Color.White
                     )
+                Box(
+                    modifier = Modifier.size(32.dp).clip(CircleShape).background(Color.White),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.KeyboardArrowRight,
+                        contentDescription = "Go",
+                        tint = Color.Black,
+                        modifier = Modifier.size(20.dp)
+                    )
+                }
             }
         }
         Box(
