@@ -167,7 +167,7 @@ fun ActivitasPertama(modifier: Modifier){
                 .height(64.dp),
             shape = RoundedCornerShape(50),
             colors = CardDefaults.cardColors(
-                containerColor = Color.LightGray
+                containerColor = Color.Magenta
             )
         ) {
             Row(
@@ -216,7 +216,7 @@ fun ActivitasPertama(modifier: Modifier){
                 .height(64.dp),
             shape = RoundedCornerShape(50),
             colors = CardDefaults.cardColors(
-                containerColor = Color.LightGray
+                containerColor = Color.Magenta
             )
         ) {
             Row(
@@ -265,7 +265,7 @@ fun ActivitasPertama(modifier: Modifier){
                 .height(64.dp),
             shape = RoundedCornerShape(50),
             colors = CardDefaults.cardColors(
-                containerColor = Color.LightGray
+                containerColor = Color.Magenta
             )
         ) {
             Row(
