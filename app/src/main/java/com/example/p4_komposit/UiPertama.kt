@@ -1,6 +1,7 @@
 package com.example.p4_komposit
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -14,8 +15,11 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -114,17 +118,21 @@ fun ActivitasPertama(modifier: Modifier){
                 modifier = Modifier.padding(all = 10.dp)
             ) {
                 val gambar = painterResource(id = R.drawable.umy)
-                Image(
-                    painter = gambar,
-                    null,
-                    modifier = Modifier
-                        .size(size = 100.dp)
-                        .padding(all = 5.dp)
-                )
+                Box(
+                    modifier = Modifier.size(40.dp).clip(CircleShape).background(Color.White),
+                    contentAlignment = Alignment.Center
+                ) {
+                    // We replaced Image with Icon
+                    Icon(
+                        imageVector = Icons.Default.Lock,
+                        contentDescription = "Privacy Icon",
+                        tint = Color.Black, // Set the icon color
+                        modifier = Modifier.size(24.dp) // 24.dp is a good size
+                    )
+                }
 
                 Spacer(modifier = Modifier.width(10.dp))
 
-                Column() {
                     Text(
                         stringResource(R.string.nama),
                         fontSize = 30.sp,
@@ -132,13 +140,6 @@ fun ActivitasPertama(modifier: Modifier){
                         color = Color.White,
                         modifier = Modifier.padding(top = 15.dp)
                     )
-                    Text(
-                        stringResource(R.string.alamat),
-                        fontSize = 20.sp,
-                        color = Color.Yellow,
-                        modifier = Modifier.padding(10.dp)
-                    )
-                }
             }
         }
         Box(
