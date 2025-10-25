@@ -167,14 +167,13 @@ fun ActivitasPertama(modifier: Modifier){
                 .height(64.dp),
             shape = RoundedCornerShape(50),
             colors = CardDefaults.cardColors(
-                containerColor = Color.Magenta
+                containerColor = Color(0xFF483D8B)
             )
         ) {
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier.padding(all = 10.dp)
             ) {
-                val gambar = painterResource(id = R.drawable.umy)
                 Box(
                     modifier = Modifier.size(40.dp).clip(CircleShape).background(Color.White),
                     contentAlignment = Alignment.Center
@@ -216,14 +215,13 @@ fun ActivitasPertama(modifier: Modifier){
                 .height(64.dp),
             shape = RoundedCornerShape(50),
             colors = CardDefaults.cardColors(
-                containerColor = Color.Magenta
+                containerColor = Color(0xFF483D8B)
             )
         ) {
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier.padding(all = 10.dp)
             ) {
-                val gambar = painterResource(id = R.drawable.umy)
                 Box(
                     modifier = Modifier.size(40.dp).clip(CircleShape).background(Color.White),
                     contentAlignment = Alignment.Center
@@ -265,14 +263,13 @@ fun ActivitasPertama(modifier: Modifier){
                 .height(64.dp),
             shape = RoundedCornerShape(50),
             colors = CardDefaults.cardColors(
-                containerColor = Color.Magenta
+                containerColor = Color(0xFF483D8B)
             )
         ) {
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier.padding(all = 10.dp)
             ) {
-                val gambar = painterResource(id = R.drawable.umy)
                 Box(
                     modifier = Modifier.size(40.dp).clip(CircleShape).background(Color.White),
                     contentAlignment = Alignment.Center
