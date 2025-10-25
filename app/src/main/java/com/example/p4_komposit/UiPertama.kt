@@ -32,8 +32,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.blur
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.scale
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
@@ -46,6 +48,38 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun ActivitasPertama(modifier: Modifier){
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+    ) {
+        Image(
+            painter = painterResource(id = R.drawable.bg), // <--- YOUR BACKGROUND IMAGE
+            contentDescription = "Background",
+            modifier = Modifier
+                .fillMaxSize()
+                .blur(radius = 5.dp),
+            contentScale = ContentScale.Crop // Crop to fill the screen
+        )
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 16.dp, vertical = 32.dp)
+                .clip(RoundedCornerShape(24.dp))
+                .background(
+                    brush = Brush.verticalGradient(
+                        colors = listOf(
+                            Color.White.copy(alpha = 0.3f), // Brighter at top
+                            Color.White.copy(alpha = 0.1f)  // Fades in middle
+                        )
+                    )
+                )
+                .border(
+                    width = 1.dp,
+                    color = Color.White.copy(alpha = 0.7f),
+                    shape = RoundedCornerShape(24.dp)
+                )
+        )
+    }
     Column(modifier = Modifier
         .padding(start = 24.dp, end = 24.dp, top = 60.dp)
         .fillMaxSize(),
