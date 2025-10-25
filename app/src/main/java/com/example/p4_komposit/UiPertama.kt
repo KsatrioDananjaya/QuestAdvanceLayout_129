@@ -17,6 +17,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Email
 import androidx.compose.material.icons.filled.KeyboardArrowRight
 import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material3.Card
@@ -174,7 +175,7 @@ fun ActivitasPertama(modifier: Modifier){
                     contentAlignment = Alignment.Center
                 ) {
                     Icon(
-                        imageVector = Icons.Default.Lock,
+                        imageVector = Icons.Default.Email,
                         contentDescription = "Privacy Icon",
                         tint = Color.Black,
                         modifier = Modifier.size(24.dp)
@@ -184,12 +185,12 @@ fun ActivitasPertama(modifier: Modifier){
                 Spacer(modifier = Modifier.width(10.dp))
 
                 Text(
-                    stringResource(R.string.priv),
+                    stringResource(R.string.mess),
                     fontSize = 20.sp,
                     fontFamily = FontFamily.Monospace,
                     color = Color.White
                 )
-                Spacer(modifier = Modifier.width(170.dp))
+                Spacer(modifier = Modifier.width(110.dp))
                 Box(
                     modifier = Modifier.size(32.dp).clip(CircleShape).background(Color.White),
                     contentAlignment = Alignment.Center
