@@ -81,8 +81,9 @@ fun ActivitasPertama(modifier: Modifier){
                     .clip(CircleShape)
             )
         }
+        Spacer(modifier = Modifier.height(10.dp))
         Text(
-            text = stringResource(id = R.string.prodi),
+            text = stringResource(id = R.string.nama),
             fontSize = 30.sp,
             fontWeight = FontWeight.Bold
         )
