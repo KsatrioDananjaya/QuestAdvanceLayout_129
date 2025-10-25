@@ -21,6 +21,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
@@ -54,7 +55,32 @@ fun ActivitasPertama(modifier: Modifier){
         Row(
             horizontalArrangement = Arrangement.spacedBy(16.dp),
             verticalAlignment = Alignment.CenterVertically
-        ) { }
+        ) {
+            Image(
+                painter = steam,
+                null,
+                modifier = Modifier
+                    .size(30.dp)
+                    .clip(CircleShape)
+            )
+            Image(
+                painter = disc,
+                null,
+                contentScale = ContentScale.Crop,
+                modifier = Modifier
+                    .size(30.dp)
+                    .scale(1.1f)
+                    .clip(CircleShape)
+            )
+            Image(
+                painter = git,
+                null,
+                modifier = Modifier
+                    .size(30.dp)
+                    .scale(1.3f)
+                    .clip(CircleShape)
+            )
+        }
         Text(
             text = stringResource(id = R.string.prodi),
             fontSize = 30.sp,
