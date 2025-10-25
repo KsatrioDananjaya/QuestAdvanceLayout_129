@@ -22,6 +22,8 @@ import androidx.compose.material.icons.filled.Build
 import androidx.compose.material.icons.filled.Email
 import androidx.compose.material.icons.filled.KeyboardArrowRight
 import androidx.compose.material.icons.filled.Lock
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
@@ -261,6 +263,20 @@ fun ActivitasPertama(modifier: Modifier){
                 .fillMaxSize()
         ){
             val activity =(LocalContext.current as? Activity)
+
+            Button(
+                onClick = {
+                    activity?.finish()
+                },
+                modifier = Modifier
+                    .fillMaxWidth(fraction = 0.5f)
+                    .align(Alignment.Center)
+                    .height(56.dp),
+                shape = RoundedCornerShape(50),
+                colors = ButtonDefaults.buttonColors(
+                    Color(0xFFD93A3A)
+                )
+            ) {}
             Text(
                 stringResource(R.string.copy),
                 modifier = Modifier
