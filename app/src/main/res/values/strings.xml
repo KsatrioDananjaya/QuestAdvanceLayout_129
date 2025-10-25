@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">P4_Komposit</string>
     <string name="nama">Ksatrio Danan</string>
+    <string name="desc">Saya suka main game</string>
+    <string name="priv">Privacy</string>
+    <string name="mess">Private Chat</string>
+    <string name="sett">Pengaturan</string>
     <string name="alamat">Bantul, Jogja</string>
     <string name="prodi">Teknologi Informasi</string>
     <string name="univ">UMY</string>
