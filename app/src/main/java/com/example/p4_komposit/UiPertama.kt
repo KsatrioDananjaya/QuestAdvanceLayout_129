@@ -15,6 +15,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material3.Card
@@ -106,11 +107,11 @@ fun ActivitasPertama(modifier: Modifier){
 
         Card(
             modifier = Modifier
-                .height(height = 160.dp)
-                .fillMaxWidth(fraction = 1f)
-                .padding(all = 12.dp),
+                .fillMaxWidth()
+                .height(64.dp),
+            shape = RoundedCornerShape(50),
             colors = CardDefaults.cardColors(
-                containerColor = Color.DarkGray
+                containerColor = Color.LightGray
             )
         ) {
             Row(
