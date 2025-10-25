@@ -2,6 +2,7 @@ package com.example.p4_komposit
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -49,6 +50,11 @@ fun ActivitasPertama(modifier: Modifier){
                 .clip(CircleShape)
                 .border(2.dp, Color.White, CircleShape)
         )
+        Spacer(modifier = Modifier.height(10.dp))
+        Row(
+            horizontalArrangement = Arrangement.spacedBy(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) { }
         Text(
             text = stringResource(id = R.string.prodi),
             fontSize = 30.sp,
