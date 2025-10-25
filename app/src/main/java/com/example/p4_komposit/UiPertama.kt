@@ -35,12 +35,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.blur
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.scale
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Shadow
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -128,21 +131,32 @@ fun ActivitasPertama(modifier: Modifier){
                     .clip(CircleShape)
             )
         }
+        val shadow = Shadow(
+            color = Color.Black.copy(alpha = 0.5f),
+            offset = Offset(x = 4f, y = 4f),
+            blurRadius = 8f
+        )
         Spacer(modifier = Modifier.height(10.dp))
         Text(
             text = stringResource(id = R.string.nama),
             fontSize = 30.sp,
-            fontWeight = FontWeight.Bold
+            fontWeight = FontWeight.Bold,
+            color = Color.White,
+            style = TextStyle(shadow = shadow)
         )
         Text(
-            text = stringResource(id = R.string.univ),
-            fontSize = 18.sp
+            text = "@dananjaya",
+            fontSize = 18.sp,
+            color = Color.DarkGray,
         )
         Spacer(modifier = Modifier.height(10.dp))
         Text(
             text = stringResource(id = R.string.desc),
             fontSize = 20.sp,
-            fontWeight = FontWeight.SemiBold
+            fontWeight = FontWeight.SemiBold,
+            fontFamily = FontFamily.Monospace,
+            color = Color.White,
+            style = TextStyle(shadow = shadow)
         )
 
         Spacer(modifier = Modifier.height(height = 25.dp))
